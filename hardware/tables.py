@@ -12,4 +12,3 @@ class HardwareTable(tables.DataTable):
     class Meta:
         name = "hardware_table"
         verbose_name = _('Hardware Table')
-        multi_select = False
