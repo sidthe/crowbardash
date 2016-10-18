@@ -10,10 +10,11 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-from horizon import views
+from horizon import views, exceptions, tables, forms, tabs
 
+from openstack_dashboard.dashboards.crowbardash.hardware.tables import HardwareTable
 
-class IndexView(views.APIView):
+class HardwareIndexView(tables.DataTableView):
     # A very simple class-based view...
     template_name = 'crowbardash/hardware/index.html'
 
